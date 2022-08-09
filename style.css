@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --bo :hsl(31, 77%, 52%);
+    --dc:hsl(184, 100%, 22%);
+    --vdc:hsl(179, 100%, 13%);
+    --tw:hsla(0, 0%, 100%, 0.75);
+    --vlg:hsl(0, 0%, 95%);
+}
+body{
+    font-size: 15px;
+    padding: 100px;
+    background-color: var(--vlg);
+}
+.container{
+   
+    margin:auto;
+    border-radius: 20px;
+    width: 20em;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color:var(--vlg);
+}
+p{
+    padding: 20px 0 25px 0;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--tw);
+    
+    
+}
+button{
+    height: 3.5em;
+    border-radius: 50px;
+    width:10em;
+    border: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--tw);
+    
+}
+#button-1{
+color: var(--bo);
+}
+#button-2{
+   color: var(--dc); 
+   text-transform: capitalize;
+}
+#button-3{
+    color: var(--vdc);
+    text-transform: capitalize;
+}
+#button-1:hover,#button-2:hover,#button-3:hover{
+    color: var(--tw);
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    color: var(--tw);
+
+}
+.sedans{
+    padding: 50px;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--bo);
+}
+.suv{
+    padding: 50px;
+    background-color: var(--dc);
+}
+.luxury{
+    padding: 50px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--vdc);
+}
+@media screen and (min-width:700px){
+   
+    .container{
+        margin: 0;
+        padding-left: 300px;
+        display: flex;
+   
+    }
+    .sedans{
+        border-radius: 10px 0px 0px 10px ;
+        
+    }
+    .luxury{
+        border-radius: 0px 10px 10px 0px ;
+    }
+
+}
